@@ -1,0 +1,78 @@
+@import "colors"
+@import "fonts"
+// import fonts and main colors
+body
+    padding: 0
+    margin: 0
+    background-color: $primaryBgColor
+    color: $primaryFontColor
+
+.container 
+    max-width: 1280px !important
+    margin: auto !important
+
+
+// start header
+.header
+    height: 540px
+    background: url('../img/about/header/header-bg.jpg')
+    background-size: 102%
+    background-position: 0% 0%
+    background-repeat: no-repeat
+    &__block
+        display: flex
+        margin: 20px auto
+        width: 100%
+        flex-wrap: nowrap
+        justify-content: space-between
+    &__logo
+        img
+            max-width: 210px
+    &__menu
+        display: flex
+        width: 100%
+        margin: 10px auto
+        max-width: 440px
+    &__nav
+        width: 100%
+        padding: 0
+        margin: 0
+        list-style: none
+        display: flex
+        justify-content: space-between
+        li
+            a
+                padding: 5px
+                color: $primaryBgColor
+                font-family: $Lato
+                font-size: 19px
+                text-decoration: none
+                text-transform: capitalize
+    &__search 
+        margin: 15px 35px 10px 0
+        i
+            color: $primaryBgColor
+            font-size: 24px
+    &__icons
+        margin: 10px 0
+        padding: 0
+        list-style: none
+        display: flex
+        li
+            margin-right: 16px
+            &:last-child
+                margin-right: 0
+            img
+                width: 37px
+    &__text
+        margin-top: 60px
+        h3
+            margin: 0 auto
+            text-align: center
+            font-size: 66px
+            font-weight: bold
+            font-family: $Lato
+            color: $primaryBgColor
+            text-transform: uppercase
+
+// end header

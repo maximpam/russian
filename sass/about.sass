@@ -1,0 +1,322 @@
+@import "colors"
+@import "fonts"
+// import fonts and main colors
+body
+    padding: 0
+    margin: 0
+    background-color: $primaryBgColor
+    color: $primaryFontColor
+
+.selected 
+    font-weight: 900
+
+.instagram
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) 
+
+.facebook
+    background: #3864a3
+
+.tripadvisor
+    background: #38b580
+
+.container 
+    max-width: 1280px !important
+    margin: auto !important
+
+
+
+// start header
+.header
+    height: 540px
+    background: url('../img/about/header/header-bg.jpg')
+    background-size: 102%
+    background-position: 0% 0%
+    background-repeat: no-repeat
+    &__block
+        display: flex
+        margin: 20px auto
+        width: 100%
+        flex-wrap: nowrap
+        justify-content: space-between
+    &__logo
+        img
+            max-width: 210px
+    &__menu
+        display: flex
+        width: 100%
+        margin: 10px auto
+        max-width: 440px
+    &__nav
+        width: 100%
+        padding: 0
+        margin: 0
+        list-style: none
+        display: flex
+        justify-content: space-between
+        li
+            a
+                padding: 5px
+                color: $primaryBgColor
+                font-family: $Lato
+                font-size: 19px
+                text-decoration: none
+                text-transform: capitalize
+    &__search 
+        margin: 15px 35px 10px 0
+        i
+            color: $primaryBgColor
+            font-size: 24px
+    &__icons
+        margin: 10px 0
+        padding: 0
+        list-style: none
+        display: flex
+        li
+            margin-right: 16px
+            &:last-child
+                margin-right: 0
+            img
+                width: 37px
+    &__text
+        margin-top: 60px
+        h3
+            margin: 0 auto
+            text-align: center
+            font-size: 66px
+            font-weight: bold
+            font-family: $Lato
+            color: $primaryBgColor
+            text-transform: uppercase
+
+// end header
+//start mission
+.mission
+    &__block
+        padding-bottom: 50px
+    &__text
+        margin-top: 19px
+        padding-bottom: 30px
+        h4
+            margin: 0 0 32px
+            font-size: 32px
+            font-family: $Lato
+            font-weight: bold
+        p
+            margin: 16px 0 0
+            font-size: 18px
+            font-family: $Lato
+            line-height: 27px
+            strong
+                font-weight: 900
+    &__buttons
+        margin-top: 60px
+        button
+            display: block
+            width: 100%
+            margin-top: 15px
+            padding: 13px 10px
+            font-size: 24px
+            font-family: $Lato
+            color: $primaryBgColor
+            border: none
+            border-radius: 5px
+
+//end mission
+
+// start our-story
+
+.our-story
+    background: $secondaryBgColor
+    padding-bottom: 55px
+    &__text
+        margin-top: 38px
+        h4
+            margin: 0 0 32px
+            font-size: 32px
+            font-family: $Lato
+            font-weight: bold
+        p
+            margin: 16px 0 0
+            font-size: 18px
+            font-family: $Lato
+            line-height: 27px
+            strong
+                font-weight: 900
+    &__pic
+        margin-top: 100px
+        img
+            max-width: 100%
+            border-radius: 5px
+
+//end
+// start
+
+.why
+    padding-bottom: 30px
+    &__title
+        h4
+            font-size: 32px
+            font-family: $Lato
+            font-weight: bold
+    &__img
+        margin-left: 60px
+        img
+            max-width: 800px
+            border-radius: 5px
+    &__text
+        p
+            margin: 16px 0 0
+            font-size: 18px
+            font-family: $Lato
+            line-height: 27px 
+            strong
+                font-weight: 900
+
+.customers
+    background: $secondaryBgColor
+    padding-bottom: 50px
+    &__text
+        margin-top: 38px
+        h4
+            margin: 0 0 32px
+            font-size: 32px
+            font-family: $Lato
+            font-weight: bold
+        p
+            margin: 16px 0 0
+            font-size: 18px
+            font-family: $Lato
+            line-height: 27px
+            strong
+                font-weight: 900
+    &__pic
+        margin-top: 55px
+        img
+            max-width: 100%
+            border-radius: 5px
+
+.team
+    padding-bottom: 110px
+    &__block
+        padding-bottom: 50px
+    &__title
+        h4
+            font-size: 32px
+            font-family: $Lato
+            font-weight: bold
+    &__text
+        position: relative
+        img
+            position: absolute
+            left: 0
+            top: 18px
+            max-width: 30px
+        p
+            margin: 16px 0 0 60px
+            font-size: 22px
+            font-family: $Lato
+            font-style: italic
+            font-weight: 500
+            line-height: 27px
+    &__img
+        margin: 25px 0 0 60px
+        img
+            max-width: 800px
+            border-radius: 5px
+
+.footer
+    background: $secondaryBgColor
+    position: relative
+    padding-top: 200px
+    &-top__bg
+        background: url('../img/about/footer/footer-bg.png')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        position: absolute
+        top: -150px
+        width: 100%
+        height: 300px
+    &__title
+        h4
+            margin: 0 auto
+            text-align: center
+            font-size: 27px
+            font-family: $Lato
+    &__input-group
+        width: 100%
+        margin: 40px auto 96px
+        text-align: center
+        input  
+
+            display: inline-block
+            vertical-align: top
+            width: 330px
+            padding-left: 40px
+            height: 56px
+            font-size: 18px
+            font-weight: 300
+            border: none
+            border-radius: 5px
+        button
+            display: inline-block
+            vertical-align: top
+            margin-left: 10px
+            width: 210px
+            height: 56px
+            color: $primaryBgColor
+            font-family: $Lato
+            font-weight: 700
+            font-size: 22px
+            border-radius: 5px
+            border: none
+            background: #075aa7
+    &__block
+        display: flex
+        margin: 20px auto
+        width: 100%
+        flex-wrap: nowrap
+        justify-content: space-between
+    &__logo
+        img
+            max-width: 210px
+    &__menu
+        display: flex
+        width: 100%
+        margin: 10px auto
+        max-width: 440px
+    &__nav
+        width: 100%
+        padding: 0
+        margin: 0
+        list-style: none
+        display: flex
+        justify-content: space-between
+        align-items: center
+        li
+            a
+                padding: 5px
+                color: $primaryFontColor
+                font-family: $Lato
+                font-size: 19px
+                text-decoration: none
+                text-transform: capitalize
+    &__search 
+        margin: 15px 35px 10px 0
+        i
+            color: $primaryBgColor
+            font-size: 24px
+    &__icons
+        margin: 10px 0
+        padding: 0
+        list-style: none
+        display: flex
+        align-items: center
+        li
+            margin-right: 16px
+            &:last-child
+                margin-right: 0
+            img
+                width: 37px
